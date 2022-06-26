@@ -1,0 +1,37 @@
+/home/luqman/.local/share/virtualenvs/ME-GraphAU-NHAhuV8b/lib/python3.8/site-packages/torch/nn/functional.py:780: UserWarning: Note that order of the arguments: ceil_mode and return_indices will changeto match the args list in nn.MaxPool2d in a future release.
+  warnings.warn("Note that order of the arguments: ceil_mode and return_indices will change"
+/home/luqman/.local/share/virtualenvs/ME-GraphAU-NHAhuV8b/lib/python3.8/site-packages/facenet_pytorch/models/utils/detect_face.py:183: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  batch_boxes, batch_points = np.array(batch_boxes), np.array(batch_points)
+/home/luqman/.local/share/virtualenvs/ME-GraphAU-NHAhuV8b/lib/python3.8/site-packages/facenet_pytorch/models/mtcnn.py:339: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  boxes = np.array(boxes)
+/home/luqman/.local/share/virtualenvs/ME-GraphAU-NHAhuV8b/lib/python3.8/site-packages/facenet_pytorch/models/mtcnn.py:340: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  probs = np.array(probs)
+/home/luqman/.local/share/virtualenvs/ME-GraphAU-NHAhuV8b/lib/python3.8/site-packages/facenet_pytorch/models/mtcnn.py:341: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  points = np.array(points)
+Processing SN002
+Processing SN010
+Processing SN001
+Processing SN026
+Processing SN027
+Processing SN032
+Processing SN030
+Processing SN016
+Processing SN013
+Processing SN018
+Processing SN011
+Processing SN028
+Processing SN012
+Processing SN006
+Processing SN031
+Processing SN021
+Processing SN024
+Processing SN003
+Processing SN029
+Processing SN023
+Processing SN025
+Processing SN008
+Processing SN005
+Processing SN007
+Processing SN017
+Processing SN004
+--- 3376.9818947315216 seconds ---

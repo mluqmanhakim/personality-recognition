@@ -2,7 +2,7 @@ import os
 
 def main():
     videos_dir = "/nas/database/DISFA_Database/Videos_LeftCamera/"
-    output_dir = "/home/luqman/ME-GraphAU/data/DISFA/img/"
+    output_dir = '/nas/project_data/B1_Behavior/hakim/ME-GraphAU/data/DISFA/frames'
 
     for f in os.listdir(videos_dir):
         if (f.rsplit(".")[-1] == "avi"):
