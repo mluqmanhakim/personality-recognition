@@ -1,0 +1,61 @@
+QUOTA
+100 GB
+~
+
+1.5 TB
+/nas/project_data/B1_Behavior/hakim
+
+
+RUN JUPYTER NOTEBOOK
+export JUPYTER_RUNTIME_DIR=/tmp
+jupyter notebook --no-browser --port=8080
+
+CONVERT VIDEO TO FRAME
+ffmpeg -i /nas/database/DISFA_Database/Videos_LeftCamera/LeftVideoSN001_comp.avi %d.png
+
+COPY FILE TO REMOTE SERVER
+scp -P 10113 ME-GraphAU_swin_base_DISFA.zip luqman@nipg34.inf.elte.hu:/home/luqman/personality-recognition/ME-GraphAU
+
+cp RightVideoSN001_Comp.avi /home/luqman/personality-recognition/ME-GraphAU/temp
+
+UNZIP
+unzip ME-GraphAU_swin_base_DISFA.zip -d /home/luqman/ME-GraphAU/pretrained/swin
+
+RUN TEST SET
+python3 test.py --dataset DISFA --arc swin_transformer_base --exp-name test_fold1_alignment --resume pretrained/swin/MEFARG_swin_base_DISFA_fold1.pth --fold 1 
+
+python3 test.py --dataset DISFA --arc resnet50 --exp-name test_fold1_alignment --resume pretrained/resnet50/MEFARG_resnet50_DISFA_fold1.pth --fold 1
+
+
+PATH
+
+/nas/project_data/B1_Behavior/hakim/ME-GraphAU/data/DISFA/mtcnn_output
+
+/nas/database/DISFA_Database/Videos_LeftCamera/LeftVideoSN001_comp.avi
+
+
+
+nohup python3 crop_img.py > crop_img.log &
+
+ps -ef | grep python3
+
+nohup python3 run_face_alignment.py > run_face_alignment.log &
+
+cp /home/luqman/ME-GraphAU/data/DISFA/img/SN009/1745.png /home/luqman/1744.png
+
+NOT DETECTED FRAMES
+1740.png - 1766.png
+
+
+
+cd /home/fodor/dev/exordium
+
+pip install -e /home/fodor/dev/exordium --user
+
+/home/fodor/dev/exordium/exordium/preprocess/video/face.py
+
+
+EXAMPLE FOR SINGULARITY
+/home/fodor/dev/singularity
+
+
